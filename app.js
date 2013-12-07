@@ -5,13 +5,13 @@ var app = require('express').createServer(),
     hate = 0,
     total = 0;
 
-app.listen(3000);
+app.listen(80);
 
 var twit = new twitter({
-  consumer_key: 'YOUR_CONSUMER_KEY',
-  consumer_secret: 'YOUR_CONSUMER_SECRET',
-  access_token_key: 'YOUR_ACCESS_TOKEN_KEY',
-  access_token_secret: 'YOUR_ACCESS_TOKEN_KEY'
+  consumer_key: '7toAqfdHLAoLEeRu7XJGJA',
+  consumer_secret: '95TtO4jpZel3aqhHphe0tga2IIOI9apcyr8Efwc0',
+  access_token_key: '2233757042-sUE6bcqJFiita0HhCD8Rod7gIFFVRWqBZZr5cMo',
+  access_token_secret: 'cOhxaAKW4CyGpAohCrZQSueCvFNKrhPsoVmRGAyMe4Rom'
 });
 
 twit.stream('statuses/filter', { track: ['love', 'hate'] }, function(stream) {
