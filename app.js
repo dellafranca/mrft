@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express(),
+    server = http.createServer(app),
+    io = require('socket.io').listen(server),
     twitter = require('ntwitter'),
-    io = require('socket.io').listen(app),
     love = 0,
     hate = 0,
     total = 0;
