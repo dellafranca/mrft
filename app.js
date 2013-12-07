@@ -1,14 +1,13 @@
 var express = require('express');
 var app = express(),
-    http = require('http'),
-    server = http.createServer(app),
+    server = require('http').createServer(app),
     io = require('socket.io').listen(server),
     twitter = require('ntwitter'),
     love = 0,
     hate = 0,
     total = 0;
 
-app.listen(80);
+server.listen(80);
 
 var twit = new twitter({
   consumer_key: '7toAqfdHLAoLEeRu7XJGJA',
