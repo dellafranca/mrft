@@ -5,10 +5,10 @@ var app = express(), server = require('http').createServer(app), io = require(
 server.listen(80);
 
 var twit = new twitter({
-	consumer_key : '7toAqfdHLAoLEeRu7XJGJA',
-	consumer_secret : '95TtO4jpZel3aqhHphe0tga2IIOI9apcyr8Efwc0',
-	access_token_key : '2233757042-sUE6bcqJFiita0HhCD8Rod7gIFFVRWqBZZr5cMo',
-	access_token_secret : 'cOhxaAKW4CyGpAohCrZQSueCvFNKrhPsoVmRGAyMe4Rom'
+	consumer_key : 'WV2epEiUnxCfI6oFCeDJg',
+	consumer_secret : '0G0vnXsnHrVp4CHBeMMltHgCEGBFu8Fg3YU87XnWs',
+	access_token_key : '2233757042-Cw2Wn1cSr1bGIhZEN40PPSkp6yYQkEzO7JaoOgT',
+	access_token_secret : 'IToOsrmDBWOO1y9wNzmDix0kW6Sbps5M1QFay82BraA4b'
 });
 
 twit.stream('statuses/filter', {
